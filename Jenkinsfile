@@ -7,14 +7,13 @@ pipeline
         {
             steps
             {
-                script 
-                {
-                    gitCheckout
+                  gitCheckout
                     {
-                        branch: 'master' 
+                        branch: 'master', 
                         url: 'https://github.com/Parthasarathy28/cd-cdprocess.git'
                     }
-                }
+                
+        
             }
         }
     }
