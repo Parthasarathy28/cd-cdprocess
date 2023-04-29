@@ -9,7 +9,11 @@ pipeline
             {
                 script 
                 {
-                    git 'https://github.com/Parthasarathy28/cd-cdprocess.git'
+                    gitCheckout
+                    {
+                        branch: 'master' 
+                        url: 'https://github.com/Parthasarathy28/cd-cdprocess.git'
+                    }
                 }
             }
         }
